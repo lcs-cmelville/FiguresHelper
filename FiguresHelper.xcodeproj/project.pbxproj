@@ -11,6 +11,7 @@
 		C9910A552757C43F009FFE80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9910A542757C43F009FFE80 /* ContentView.swift */; };
 		C9910A572757C442009FFE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9910A562757C442009FFE80 /* Assets.xcassets */; };
 		C9910A5A2757C442009FFE80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9910A592757C442009FFE80 /* Preview Assets.xcassets */; };
+		C9910A612757C6FD009FFE80 /* ContentViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9910A602757C6FC009FFE80 /* ContentViewCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C9910A542757C43F009FFE80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9910A562757C442009FFE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9910A592757C442009FFE80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9910A602757C6FC009FFE80 /* ContentViewCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				C9910A522757C43F009FFE80 /* FiguresHelperApp.swift */,
 				C9910A542757C43F009FFE80 /* ContentView.swift */,
+				C9910A602757C6FC009FFE80 /* ContentViewCircle.swift */,
 				C9910A562757C442009FFE80 /* Assets.xcassets */,
 				C9910A582757C442009FFE80 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9910A612757C6FD009FFE80 /* ContentViewCircle.swift in Sources */,
 				C9910A552757C43F009FFE80 /* ContentView.swift in Sources */,
 				C9910A532757C43F009FFE80 /* FiguresHelperApp.swift in Sources */,
 			);

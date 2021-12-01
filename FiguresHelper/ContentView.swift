@@ -16,9 +16,9 @@ struct ContentView: View {
                 .font(.title)
                 .padding()
             
-            Text("Radius")
+            Text("Radius:")
                 .font(.title2)
-                .padding()
+                .padding(.leading)
             
             HStack{
                 
