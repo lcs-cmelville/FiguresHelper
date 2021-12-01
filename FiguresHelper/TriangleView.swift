@@ -27,7 +27,7 @@ struct TriangleView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     
                     // Input
-                    Text("Height (cm):")
+                    Text("Height (cm) :")
                         .bold()
                         .padding(.top)
                     
@@ -56,6 +56,9 @@ struct TriangleView: View {
                                maximumValueLabel: {
                             Text("100.0")
                         })
+                        
+                        Text("Side A (cm) :")
+                            .bold()
 
                         HStack {
                             Spacer()
@@ -65,8 +68,6 @@ struct TriangleView: View {
                             Spacer()
                         }
                         
-                        // The syntax of $ says to use this property (radius) and BIND IT to the control
-                        // to "bind" means that when the control changes, the property's value changes
                         Slider(value: $sideAInCentimeters,
                                in: 0.0...100.0,
                                step: 0.5,
@@ -80,6 +81,9 @@ struct TriangleView: View {
                             Text("100.0")
                         })
                         
+                        Text("Side B (cm) :")
+                            .bold()
+                        
                         HStack {
                             Spacer()
                             Text("\(sideBInCentimeters)")
@@ -87,9 +91,7 @@ struct TriangleView: View {
                                 .bold()
                             Spacer()
                         }
-                        
-                        // The syntax of $ says to use this property (radius) and BIND IT to the control
-                        // to "bind" means that when the control changes, the property's value changes
+
                         Slider(value: $sideBInCentimeters,
                                in: 0.0...100.0,
                                step: 0.5,
@@ -103,6 +105,12 @@ struct TriangleView: View {
                             Text("100.0")
                         })
                         
+                    }
+                    Group{
+                    
+                        Text("Side C (cm) :")
+                            .bold()
+                        
                         HStack {
                             Spacer()
                             Text("\(sideCInCentimeters)")
@@ -110,9 +118,7 @@ struct TriangleView: View {
                                 .bold()
                             Spacer()
                         }
-                        
-                        // The syntax of $ says to use this property (radius) and BIND IT to the control
-                        // to "bind" means that when the control changes, the property's value changes
+                    
                         Slider(value: $sideCInCentimeters,
                                in: 0.0...100.0,
                                step: 0.5,
