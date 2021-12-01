@@ -12,7 +12,14 @@ struct ContentViewCircle: View {
     //"radius is the name
     //"double" is the data type
     //By adding = 15.0  we are just provifing a default value
-    var radius: Double = 45.00
+    //Inupt - we need this from the use//we want SwifUI to update the user interface based on what the user selects.
+    //to do this, we use a special peice of syntax
+    //called a "property wrapper"
+    //
+    //@State
+    //
+    //this marks the property as being on that SwitUI should watch for changes.
+   @State var radius: Double = 15.00
     
     //MARK: Computed Properties
     var area: Double {
@@ -39,7 +46,9 @@ struct ContentViewCircle: View {
                             Spacer()
                         }
                         
-                        Slider(value: .constant(15.0),
+                        // The syntax of $says to use this property (radius) and BIND IT to the control
+                        // to "bind" means that when the control changes, the property's value changes
+                        Slider(value: $radius,
                                in: 0.0...100.0,
                                label: {
                             Text("Radius")
