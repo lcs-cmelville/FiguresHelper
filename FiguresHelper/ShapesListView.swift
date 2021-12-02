@@ -9,6 +9,14 @@ import SwiftUI
 
 struct ShapesListView: View {
     var body: some View {
+        
+        VStack{
+            
+            Text("Shapes")
+                .bold()
+                .font(.title2)
+            
+            
         List{
             
             NavigationLink( destination:
@@ -29,7 +37,7 @@ struct ShapesListView: View {
                 Text("Rectangle")
             }
             
-            
+            }
         }
     }
 }

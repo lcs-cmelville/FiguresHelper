@@ -40,7 +40,7 @@ struct ContentViewCircle: View {
                         // Show the selected radius value
                         HStack {
                             Spacer()
-                            Text("\(radius)")
+                            Text("\(String(format: "%.1f", radius))")
                                 .font(.title2)
                                 .bold()
                             Spacer()
@@ -68,7 +68,7 @@ struct ContentViewCircle: View {
                     Text("Area:")
                         .bold()
                     
-                    Text("\(area) square units")
+                    Text("\(String(format: "%.2f", area)) square units")
                         .font(.title2)
                     
                     

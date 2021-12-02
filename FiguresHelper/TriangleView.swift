@@ -108,7 +108,7 @@ struct TriangleView: View {
                     }
                     Group{
                     
-                        Text("Side C (cm) :")
+                        Text("Side C / Base (cm) :")
                             .bold()
                         
                         HStack {
